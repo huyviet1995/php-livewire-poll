@@ -15,7 +15,7 @@
         <div class="mb-4">
             <label for="">Option {{ $index + 1 }}</label>
             <div class="flex gap-3">
-                <input type="text" wire:model="options.{{$index}}">
+                <input type="text" wire:model.live="options.{{$index}}">
                 <button class="btn bg-red-500 text-white" wire:click="deleteOption({{ $index }})">Delete</button>
             </div>
             @error("options.{$index}")
