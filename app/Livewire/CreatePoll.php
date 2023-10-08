@@ -35,6 +35,8 @@ class CreatePoll extends Component
                 'name' => $optionName,
             ]);
         }
+
+        $this->reset(['title', 'options']);
     }
 
     public function render()
