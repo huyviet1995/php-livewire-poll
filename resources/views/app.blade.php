@@ -11,7 +11,7 @@
   {{-- blade-formatter-disable --}}
   <style type="text/tailwindcss">
     .btn {
-      @apply rounded-md px-2 py-1 text-center font-medium text-slate-700 shadow-sm ring-1 ring-slate-700/10 hover:bg-slate-50
+      @apply rounded-md px-2 py-1 text-center font-medium shadow-sm ring-1 ring-slate-700/10 hover:bg-slate-50
     }
 
     label {
@@ -20,7 +20,8 @@
 
     input, 
     textarea {
-      @apply shadow-sm appearance-none border w-full py-2 px-3 text-slate-700 leading-tight focus:outline-none
+      border: 2px solid #e2e8f0;
+      @apply shadow-sm appearance-none w-full py-2 px-3 text-slate-700 leading-tight focus:outline-none
     }
 
     .error {
@@ -33,6 +34,7 @@
 </head>
 
 <body class="container mx-auto mt-10 mb-10 max-w-lg">
+  <livewire:create-poll/>
   @livewireScripts
 </body>
 
